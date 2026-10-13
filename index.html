@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Surfing Grid Image</title>
+<style>
+    body {
+        background: whitesmoke;
+    } #container {
+        width: 928px;
+        height: 1450px;
+        background: white;
+        border: 1px solid dimgray;
+        margin: 24px auto;
+    } form {
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        background: rgb(89, 194, 197);
+        margin: 36px auto;
+        border: 1px solid rgb(189, 151, 108);
+        box-shadow: 2px 3px 6px rgb(230, 192, 97);
+        border-radius: 18px;
+        font: 14pt/1.2em Candara;
+    } header img {
+        width: 100%;
+    } header h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin-top: 24px;
+        text-shadow: 2px 3px 6px rgb(230, 180, 87);
+    } h1 {
+        font: 24pt/1.4em Candara;
+        text-align: center;
+    } input[type="text"] {
+        width: 96%;
+        font: 12pt/1.4em Candara;
+    } select {
+        width: 50%;
+        font: 12pt/1.4em Candara;
+        padding: 2px 4px;
+    } textarea {
+        width: 96%
+
+    } input[type="submit"] {
+        width: 100px;
+        height: 40px;
+        background: rgb(219, 174, 137); 
+
+        margin: 0 auto;
+        display: block;
+    }
+    
+</style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="beach-banner-og.jpg" />
+            <h1>Surfing Help</h1>
+        </header>
+
+        <form action="#" method="post">
+        <h1>Contact Us</h1>
+
+        <label>First Name</label><br/>
+        <input type="text" name="first-name" /><br/>
+        <label>Last Name</label><br/>
+        <input type="text" name="last-name" /><br/>
+        <label>Email</label><br/>
+        <input type="text" name="email" /><br/>
+        <br/>
+
+        <label>Experience Level</label><br/>
+        <select name="experience-level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+        <br/><br/>
+
+        <fieldset>
+        <legend>Instructor?</legend>
+        <input type="radio" name="instructor" /><label>No</label>
+        <input type="radio" name="instructor" /><label>Yes</label>
+        <br/>
+        </fieldset>
+
+        <fieldset>
+        <legend>Topics of Interest</legend>
+        <input type="checkbox"><label>Equipment Advice</label><br/>
+        <input type="checkbox"><label>Technique</label><br/>
+        <input type="checkbox"><label>Communities</label><br/>
+        <input type="checkbox"><label>Other</label><br/>
+        </fieldset><br/>
+
+        <label>Message</label><br/>
+        <textarea>
+        </textarea><br/><br/>
+
+        <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
